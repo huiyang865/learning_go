@@ -1,2 +1,3 @@
 # learning_go
-Some code for learning go language.
+学习go语言的脚本例子
+对比python动态语言和go静态语言特性学习
