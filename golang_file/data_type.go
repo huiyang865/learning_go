@@ -64,4 +64,14 @@ func main() {
 	// 3. Parse类函数用途更广，可以转换string和bool等类型
 	ba, _ := strconv.ParseBool("true")
 	fmt.Println(ba)
+	bb, _ := strconv.ParseFloat("3.14", 64) // 转成float64
+	fmt.Println(bb)
+	bc, _ := strconv.ParseInt("5", 10, 64) // 转成int64,输入是十进制
+	fmt.Println(bc)
+
+	// Format类函数，将给定类型转为string
+	s := strconv.FormatInt(-42, 16) // 转成16进制的字符串
+	fmt.Println(s)
+	s = strconv.FormatFloat(3.14, 'E', -1, 64)
+	fmt.Println(s)
 }
