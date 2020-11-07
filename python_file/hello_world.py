@@ -1,3 +1,7 @@
+# 变量的定义域
+aaa = 20
+
+
 def main():
     print('hello world!')  # 默认换行
 
@@ -22,6 +26,12 @@ def main():
     c = 2 * PI * r
     print(c)
 
+    global aaa
+    aaa = 11
+    print(aaa)
+
 
 if __name__ == "__main__":
+    print(aaa)
     main()  # 需要手动调用
+    print(aaa)

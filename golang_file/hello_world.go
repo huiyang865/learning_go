@@ -6,6 +6,16 @@ func test() (int, error) {
 	return 0, nil
 }
 
+//变量的作用域
+// 全局变量，只能用var定义
+var aaa = 30
+
+func var_scope() {
+	// 局部变量
+	c := 10
+	fmt.Println(c, aaa)
+}
+
 // func 定义函数, 将主要逻辑放到main函数中，不需要手动调用main函数
 func main() {
 	// 字符串只能用双引号，单引号会报错
@@ -66,6 +76,8 @@ func main() {
 		cj     = iota
 	)
 	fmt.Println(ca, cb, cc, cd, ce, cf, ch, cj)
+
+	var_scope()
 }
 
 // go run hello_world.go 执行脚本
